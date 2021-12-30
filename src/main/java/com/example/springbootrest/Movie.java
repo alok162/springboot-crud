@@ -9,9 +9,9 @@ public class Movie {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "Movie_ID")
+    @Column(name = "movie_id")
     private int id;
-    @Column(name = "Movie_Name")
+    @Column(name = "movie_name")
     private String name;
 
     public int getId() {

@@ -24,4 +24,8 @@ public class MovieService {
             return optionalMovie.get();
         return null;
     }
+
+    public void saveMovieService(Movie movie) {
+        movieRepository.save(movie);
+    }
 }

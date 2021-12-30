@@ -22,4 +22,9 @@ public class MovieController {
     public Movie getMovieById(@PathVariable int id) {
         return movieService.getMovieService(id);
     }
+
+    @RequestMapping(value = "/movie", method = RequestMethod.POST)
+    public void saveMovie(@RequestBody Movie movie) {
+        movieService.saveMovieService(movie);
+    }
 }
